@@ -105,13 +105,13 @@ const navigation = document.querySelector('nav');
 
 let newAnchorOne = document.createElement('a');
 newAnchorOne.style.color = 'green';
-newAnchorOne = 'Chicken Nuggets';
+newAnchorOne.innerText = 'Chicken Nuggets';
 
 navigation.prepend(newAnchorOne);
 
 let newAnchorTwo = document.createElement('a');
 newAnchorTwo.style.color = 'green';
-newAnchorTwo = 'French Fries';
+newAnchorTwo.innerText= 'French Fries';
 
 navigation.append(newAnchorTwo);
 
