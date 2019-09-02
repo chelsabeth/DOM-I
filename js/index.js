@@ -100,6 +100,20 @@ midImg.src = siteContent['main-content']['middle-img-src'];
 let copyRight = document.querySelector('footer');
 copyRight.innerText = siteContent.footer.copyright;
 
+// Prepend and Append
+const navigation = document.querySelector('nav');
+
+let newAnchorOne = document.createElement('a');
+newAnchorOne.style.color = 'green';
+newAnchorOne = 'Chicken Nuggets';
+
+navigation.prepend(newAnchorOne);
+
+let newAnchorTwo = document.createElement('a');
+newAnchorTwo.style.color = 'green';
+newAnchorTwo = 'French Fries';
+
+navigation.append(newAnchorTwo);
 
 
 
