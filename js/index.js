@@ -70,16 +70,17 @@ let topImage = document.getElementById('cta-img');
 topImage.src = siteContent.cta['img-src'];
 
 
-// Paragraph Headers
-let parHeaders = document.querySelectorAll('h4');
+// All h4's 
+let headers = document.querySelectorAll('h4');
 
-parHeaders[0].innerText = siteContent['main-content']['features-h4'];
-parHeaders[1].innerText = siteContent['main-content']['about-h4'];
-parHeaders[2].innerText = siteContent['main-content']['services-h4'];
-parHeaders[3].innerText = siteContent['main-content']['product-h4'];
-parHeaders[4].innerText = siteContent['main-content']['vision-h4'];
+headers[0].innerText = siteContent['main-content']['features-h4'];
+headers[1].innerText = siteContent['main-content']['about-h4'];
+headers[2].innerText = siteContent['main-content']['services-h4'];
+headers[3].innerText = siteContent['main-content']['product-h4'];
+headers[4].innerText = siteContent['main-content']['vision-h4'];
+headers[5].innerText = siteContent['contact']['contact-h4'];
 
-// Paragraphs
+// All Paragraphs
 let paragraphs = document.querySelectorAll('p');
 
 paragraphs[0].innerText = siteContent['main-content']['features-content'];
@@ -87,18 +88,19 @@ paragraphs[1].innerText = siteContent['main-content']['about-content'];
 paragraphs[2].innerText = siteContent['main-content']['services-content'];
 paragraphs[3].innerText = siteContent['main-content']['product-content'];
 paragraphs[4].innerText = siteContent['main-content']['vision-content'];
+paragraphs[5].innerText = siteContent['contact']['address'];
+paragraphs[6].innerText = siteContent['contact']['phone'];
+paragraphs[7].innerText = siteContent['contact']['email'];
 
 // Middle Image 
 let midImg = document.getElementById('middle-img');
 midImg.src = siteContent['main-content']['middle-img-src'];
 
-// Contact 
-let contactHeader = document.querySelector('contact-h4');
-contactHeader.innerText = siteContent['contact']["contact-h4"];
-
 // Copyright 
 let copyRight = document.querySelector('footer');
 copyRight.innerText = siteContent.footer.copyright;
+
+
 
 
 
