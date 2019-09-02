@@ -42,17 +42,44 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
+// Navigation
 let aTags = document.querySelectorAll('a');
 
-aTags[0].innerText = siteContent.nav["nav-item-1"];
-aTags[1].innerText = siteContent.nav["nav-item-2"];
-aTags[2].innerText = siteContent.nav["nav-item-3"];
-aTags[3].innerText = siteContent.nav["nav-item-4"];
-aTags[4].innerText = siteContent.nav["nav-item-5"];
-aTags[5].innerText = siteContent.nav["nav-item-6"];
+aTags[0].innerText = siteContent.nav['nav-item-1'];
+aTags[1].innerText = siteContent.nav['nav-item-2'];
+aTags[2].innerText = siteContent.nav['nav-item-3'];
+aTags[3].innerText = siteContent.nav['nav-item-4'];
+aTags[4].innerText = siteContent.nav['nav-item-5'];
+aTags[5].innerText = siteContent.nav['nav-item-6'];
 
 aTags.forEach(element => {
   element.style.color = 'green';
   });
 
-  
+
+// Header
+let headerText = document.querySelector('h1');
+headerText.innerText = siteContent.cta.h1;
+
+// Button 
+let btnElement = document.querySelector('button');
+btnElement.innerText = siteContent.cta.button;
+
+// Image 
+let topImage = document.getElementById('cta-img');
+topImage.src = siteContent.cta["img-src"];
+
+
+// Paragraph Headers
+let parHeaders = document.querySelectorAll('h4');
+
+parHeaders[0].innerText = siteContent["main-content"]["features-h4"];
+parHeaders[1].innerText = siteContent['main-content']['about-h4'];
+parHeaders[2].innerText = siteContent["main-content"]["services-h4"];
+parHeaders[3].innerText = siteContent["main-content"]['product-h4'];
+parHeaders[4].innerText = siteContent["main-content"]['vision-h4'];
+
+
+
+
+
